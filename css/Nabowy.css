@@ -1,0 +1,275 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.cansel {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+section.active {
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+}
+section.active .button button {
+  background-color: white;
+  padding: 7px 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 #ccc;
+}
+section.active .button button a {
+  color: black;
+  font-weight: bolder;
+  opacity: 0.9;
+}
+section header {
+  padding: 50px 0 80px 0;
+}
+section header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section header .container .logo img {
+  width: 150px;
+}
+section.afterHeader .container {
+  display: flex;
+  justify-content: space-between;
+}
+section.afterHeader .container .imge,
+section.afterHeader .container .text {
+  flex-basis: 48%;
+}
+section.afterHeader .container .imge img {
+  max-width: 100%;
+}
+section.afterHeader .container .text h2 {
+  margin: 50px 0;
+  max-width: 70%;
+}
+section.afterHeader .container .text p {
+  max-width: 70%;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+section.afterHeader .container .text button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: hsl(322, 100%, 66%);
+}
+section.afterHeader .container .text button a {
+  color: white;
+}
+section.two {
+  padding: 100px 0;
+}
+section.two .container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+section.two .container .box {
+  padding: 0px 10px;
+  margin-bottom: 20px;
+  height: 265px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 0 180px 0px #ccc;
+}
+section.two .container .box .imge,
+section.two .container .box .text {
+  flex-basis: 48%;
+}
+section.two .container .box .text {
+  padding: 0 50px;
+}
+section.two .container .box .text h2 {
+  margin-bottom: 10px;
+}
+section.two .container .box .text p {
+  line-height: 1.4;
+  opacity: 0.8;
+}
+section.two .container .box .imge {
+  display: flex;
+  justify-content: flex-end;
+}
+section.two .container .box .imge img {
+  max-width: 50%;
+}
+section.two .container .box:nth-child(2) .imge {
+  justify-content: flex-start;
+  padding: 0 50px;
+}
+section.beforeFooter {
+  position: relative;
+  padding: 100px 0 0 0;
+}
+section.beforeFooter .boxToBuild {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 100px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 #ccc;
+  width: fit-content;
+  position: absolute;
+  left: 50%;
+  top: -0px;
+  transform: translateX(-50%);
+}
+section.beforeFooter .boxToBuild h2 {
+  margin-bottom: 20px;
+}
+section.beforeFooter .boxToBuild button {
+  padding: 15px 40px;
+  border-radius: 20px;
+  background-color: hsl(322, 100%, 66%);
+  transition: 0.5s;
+}
+section.beforeFooter .boxToBuild button:hover {
+  background-color: hsl(322, 100%, 86%);
+}
+section.beforeFooter .boxToBuild button a {
+  color: white;
+}
+section.beforeFooter footer {
+  background-color: hsl(192, 100%, 9%);
+  padding: 80px 0;
+}
+section.beforeFooter footer .container .links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+section.beforeFooter footer .container .logo h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+section.beforeFooter footer .container .logo h2 i {
+  margin-right: 5px;
+}
+section.beforeFooter footer .container .list li {
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+section.beforeFooter footer .container .list li i {
+  color: white;
+  align-self: flex-start;
+  margin-right: 10px;
+}
+section.beforeFooter footer .container .list li a {
+  color: white;
+  opacity: 0.6;
+  font-size: 13px;
+  display: block;
+}
+section.beforeFooter footer .container .list:not(.list:last-child) li a:hover {
+  text-decoration: underline;
+}
+section.beforeFooter footer .container .list:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.beforeFooter footer .container .list:last-child .icone {
+  display: flex;
+}
+section.beforeFooter footer .container .list:last-child .icone div {
+  margin-left: 10px;
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+section.beforeFooter footer .container .list:last-child .icone div:hover,
+section.beforeFooter footer .container .list:last-child .icone div:hover i {
+  border-color: hsl(322, 100%, 66%);
+  color: hsl(322, 100%, 66%);
+}
+section.beforeFooter footer .container .list:last-child .icone div i {
+  color: white;
+  transition: 0.5s;
+}
+section.beforeFooter footer .container .list:last-child p {
+  font-size: 11px;
+  color: white;
+  font-weight: normal;
+}
+@media (max-width: 992px) {
+  section.afterHeader .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  section.afterHeader .container .text h2,
+  section.afterHeader .container .text p {
+    max-width: 100%;
+  }
+  section.afterHeader .container .text {
+    margin-bottom: 20px;
+  }
+  section.two .container .box img {
+    display: none;
+  }
+  section.two .container .box {
+    display: block;
+    height: fit-content;
+    padding: 20px;
+    text-align: center;
+  }
+  section.two .container .box .text {
+    flex-basis: 100%;
+  }
+  section.beforeFooter .container .boxToBuild {
+    top: -38px;
+  }
+  footer {
+    text-align: center;
+  }
+  section.beforeFooter footer .container .list li {
+    max-width: 100%;
+  }
+  footer .list li,
+  footer .icone {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
